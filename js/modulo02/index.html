@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso Js modulo 02</title>
+</head>
+<body>
+  <div id='app'>
+    <input type="text" name="nome" id="nome"></input>
+    <button class="botao">Adicionar</button>
+    <button onclick="mostraAlerta()">Me pressione</button>
+  </div>
+
+  </div>
+  <script>
+    function mostraAlerta(){
+      alert('Botão foi clicado')
+    }
+    var inputElement = document.querySelector('body div#app input[name=nome]')
+    var btnElement = document.querySelector('div#app button.botao')
+    btnElement.onclick = function(){
+      alert('botao clicado')
+    }
+    var linkElement = document.createElement('a');
+      linkElement.setAttribute('href','http:rocketseat.com.br')
+     var textElement = document.createTextNode('Acessar site da rocketseat')
+     linkElement.appendChild(textElement)
+
+     var containerElement = document.querySelector('#app')
+     containerElement.appendChild(linkElement)
+
+
+  </script>
+</body>
+</html>
